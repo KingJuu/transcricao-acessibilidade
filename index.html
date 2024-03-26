@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <title>Transcrição de áudio</title>
+</head>
+<body>
+  <header class="h-f">
+    <h1>Transcrição de áudio</h1>
+    <nav class="right-align">
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+
+    <div id="contrastOptions">
+      <button  class="btn-c" id="blackAndWhite">
+        <img src="./assets/black-and-white.png" alt="preto e branco">
+      </button>
+      <button class="btn-c" id="highContrast">
+        <img src="./assets/constrast.png" alt="alto contraste">
+      </button>
+    </div>
+    <section class="accordion">
+      <h1>A transcrição de Áudio e a Acessibilidade</h1>
+      <div class="container">
+        <button onclick="toggleVisibility('section1')" class="btn-mostrar">A importância da transcrição de áudio na acessibilidade
+          <span class="material-symbols-outlined">
+          expand_more
+          </span></button>
+        <div id="section1" class="hidden sec">
+          <p>A transcrição de texto em áudio é uma forma de tornar o conteúdo de um site acessível a pessoas cegas.
+             Essa transcrição consiste em uma descrição textual do que é dito em um arquivo de áudio. 
+             Quando essa descrição é fornecida junto com o arquivo de áudio, 
+             pessoas cegas podem ler o conteúdo usando um software de leitura de tela, que lê o texto em voz alta.
+          </p>
+          <p>Fonte: <a href="https://medium.com/@cabukater/a-importância-da-transcrição-de-texto-em-áudio-para-a-acessibilidade-cf62e9c0f9c6">medium.com/@cabukater/a-importância-da-transcrição-de-texto-em-áudio-para-a-acessibilidade</a></p>
+        </div>
+      </div>
+    
+      <div class="container">
+        <button onclick="toggleVisibility('section2')" class="btn-mostrar">Benefícios da transcrição para os cegos
+          <span class="material-symbols-outlined">
+            expand_more
+            </span></button>
+        <div id="section2" class="hidden sec">
+          <p>A transcrição de áudio em texto permite ao cego acesso à conteúdos online, mesmo sem ser capaz de ver a tela.
+            O uso de um software de transcrição de áudio economiza tempo e esforço, em comparação com a transcrição manual.      
+            A possibilidade de salvar a transcrição permite que o conteúdo seja revisado facilmente, sempre que necessário.
+          </p>
+        </div>
+      </div>
+    
+      <div class="container">
+        <button onclick="toggleVisibility('section3')" class="btn-mostrar">Softwares de Transcrição que usam IA
+          <span class="material-symbols-outlined">
+            expand_more
+            </span></button>
+        <div id="section3" class="hidden sec">
+          <p>Existem várias ferramentas online que podem ajudar na criação de transcrições de áudio. Algumas das mais importantes são:
+            <p>
+            <strong>Descript</strong>: Uma plataforma de transcrição de áudio que usa reconhecimento de voz e inteligência artificial para criar transcrições precisas. É fácil de usar e permite colaboração em tempo real.
+            <p>
+            <strong>Audext</strong>: Uma ferramenta que usa tecnologia de inteligência artificial para transcrever áudio em texto. É fácil de usar e oferece recursos avançados, como edição de texto e suporte para vários formatos de áudio. </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <button id="startButton">Iniciar Transcrição</button>
+  <div id="transcription"></div>
+
+  <footer class="h-f">
+    <p>© 2024 - Transcrição de Texto na Acessibilidade - Desenvolvido por Julia Reis</p>
+  </footer>
+  <script src="./script.js"></script>
+
+</body>
+</html>
